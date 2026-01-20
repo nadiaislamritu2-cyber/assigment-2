@@ -33,6 +33,7 @@
 
 body{
    background-color: #1A0B2E;
+   color: #ffffff;
     
 }
 .navber{
@@ -150,9 +151,72 @@ body{
     font-size: 1rem;
     font-weight: 1.25rem;
 }
+
+/* why section  */
+.why{
+    padding: 6.7rem 12.5rem;
+    background-color: #230E3D;
+}
+.why-container{
+    max-width: 75rem;
+    margin: auto;
+}
+.why-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.why-box{
+    display: grid;
+    gap: 1.5rem; 
+    grid-template-columns: repeat(3, 1fr);
+}
+.why-card{
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.why-card img{
+    width: 3rem;
+    margin-bottom: 2.5rem;
+}
+.why-card h3{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.why-card p{
+     font-size: 1rem;
+     line-height: 1.5rem;
+     color: #ffffff;
+}
+.tall{
+    grid-row: span 2;
+}
+.wide{
+    grid-column: span 2;
+}
+.small{
+    grid-column: span 1;
+}
 @media screen and (max-width:576px) {
-    .header{
-        padding: 1rem 0;
+    .why-box{
+        grid-template-columns: 1fr;
+    }
+    .why-card{
+        width: 100%;
+    }
+    .tall,
+    .wide,
+    .small{
+        grid-column: auto;
+        grid-row: auto;
+    }
+    .why-title{
+        font-size: 2rem;
     }
 }
 
