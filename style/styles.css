@@ -90,11 +90,36 @@ body{
     inset: 0;
     margin: auto;
     width: 7rem;
+    animation: rotateCircle 14s linear infinite;
+}
+@keyframes rotateCircle{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.badge-new{
+    position: absolute;
+    top: 12px;
+    left: 75%;
+    background: #00FF88;
+    color: #242323;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 27px #00ff888e;
+
 }
 .hero-title{
   font-size: 2.5em;
   margin: 2.5rem;
   color: #ffffff;
+}
+.hero-title span{
+    color: #ff4ecd;
 }
 .hero-text{
     font-size: 1rem;
@@ -133,6 +158,7 @@ body{
     font-size: 1rem;
     margin-bottom: 5rem;
     line-height: 1.25rem;
+    opacity: .85;
 }
 .about-line{
     border: 1px solid #ffffff0e;
@@ -192,6 +218,7 @@ body{
      font-size: 1rem;
      line-height: 1.5rem;
      color: #ffffff;
+     opacity: .85;
 }
 .tall{
     grid-row: span 2;
@@ -201,6 +228,121 @@ body{
 }
 .small{
     grid-column: span 1;
+}
+.media-section{
+    padding: 5rem 0;
+    color: #ffffff;
+}
+.media-container{
+    max-width: 75rem;
+    margin:  auto;
+}
+.media-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    margin-top: 7.5rem;
+}
+.media-box{
+    max-width: 75rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.media-card{
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+.media-card:hover{
+    transform: translateY(-6px);
+}
+.vedio-box{
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;aspect-ratio: 16/9;
+}
+.vedio-box iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+}
+.media-card h3{
+    font-size: 1 1rem;
+    margin: 1rem 0 .5rem;
+}
+.media-card p{
+    font-size: .9rem;
+    opacity: .85; 
+}
+.time{
+    display: inline-block;
+    margin-top: .6rem;
+    font-size: .85rem;
+    color: #00FF88;
+}
+.host-card{
+    max-width: 75rem;
+    margin: 4rem auto 0;
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 1rem;
+    padding: 2rem;
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+}
+.host-contant h3, p{
+    margin-bottom: 1rem;
+}
+.icon{
+    display: flex;
+    gap: 1rem;
+    border: 1px solod #ffffff;
+}
+.footer{
+    background: url(../assets/footer-bg.png) no-repeat center;
+    background-size: cover;
+    padding: 4rem 1rem;
+} 
+.footer-container{
+    text-align: center;
+    color: #ffffff;
+}  
+.footer-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+}
+.footer-title span{
+    color: #ff4ecd;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+}
+.icon-box{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+.icon-box img{
+    width: 28px;
+    height: 28px;
+    margin-bottom: 0.3rem;
+}
+.footer-text{
+    font-size: 0.8rem;
+    gap: 1.2rem;
 }
 @media screen and (max-width:576px) {
     .why-box{
