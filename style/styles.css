@@ -306,7 +306,8 @@ body{
 .footer{
     background: url(../assets/footer-bg.png) no-repeat center;
     background-size: cover;
-    padding: 4rem 1rem;
+    padding: 4rem 2rem;
+
 } 
 .footer-container{
     text-align: center;
